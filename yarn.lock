@@ -4171,7 +4171,7 @@ react-is@^16.3.1:
 
 react-native-camera@rozele/react-native-camera#windows:
   version "1.1.5"
-  resolved "https://codeload.github.com/rozele/react-native-camera/tar.gz/7fba81475f99ac3da7ef3a9178bffc4728115477"
+  resolved "https://codeload.github.com/rozele/react-native-camera/tar.gz/235a8aff2cdc20ac702d1a35f10b2fb6e4088a13"
   dependencies:
     lodash "^4.17.4"
     prop-types "^15.5.10"
