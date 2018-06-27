@@ -11,6 +11,7 @@
     "react-native": "0.55.4",
     "react-native-camera": "rozele/react-native-camera#windows",
     "react-native-tensorflow": "^0.1.8",
+    "react-native-windows": "0.55.0-rc.0",
     "rnpm-plugin-windows": "^0.2.8"
   },
   "devDependencies": {
