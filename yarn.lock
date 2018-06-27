@@ -4102,7 +4102,7 @@ prompts@^0.1.9:
     clorox "^1.0.1"
     sisteransi "^0.1.0"
 
-prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
@@ -4168,6 +4168,19 @@ react-devtools-core@3.1.0:
 react-is@^16.3.1:
   version "16.4.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.4.1.tgz#d624c4650d2c65dbd52c72622bbf389435d9776e"
+
+react-native-camera@rozele/react-native-camera#windows:
+  version "1.1.5"
+  resolved "https://codeload.github.com/rozele/react-native-camera/tar.gz/7fba81475f99ac3da7ef3a9178bffc4728115477"
+  dependencies:
+    lodash "^4.17.4"
+    prop-types "^15.5.10"
+
+react-native-tensorflow@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/react-native-tensorflow/-/react-native-tensorflow-0.1.8.tgz#4bfd34bde7692010f98fc9720836b17bd1c02fd6"
+  dependencies:
+    uuid "^3.1.0"
 
 react-native@0.55.4:
   version "0.55.4"
