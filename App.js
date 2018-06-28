@@ -1,6 +1,7 @@
 'use strict';
 import React, { Component } from 'react';
 import {
+  Platform,
   StyleSheet,
   Text,
   View
@@ -14,7 +15,10 @@ export default class CameraApp extends Component {
 
   componentDidMount() {
     this.recognizer = new ImageRecognizer({
-      model: require('./assets/model.pb'),
+      model: Platform.select({
+        windows: require('./assets/model.onnx'),
+        default: require('./assets/model.pb'),
+      }),
       labels: require('./assets/labels.txt'),
     });
   }
