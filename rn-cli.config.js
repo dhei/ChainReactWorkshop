@@ -1,6 +1,5 @@
 module.exports = {
     getAssetExts() {
-      return ['pb', 'txt']
+      return ['pb', 'txt', 'onnx']
     }
   }
-  
