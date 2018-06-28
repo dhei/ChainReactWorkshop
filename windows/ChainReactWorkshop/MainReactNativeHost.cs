@@ -26,6 +26,7 @@ namespace ChainReactWorkshop
         {
             new MainReactPackage(),
             new RNCameraPackage(),
+            new RNOnnxPackage(),
         };
     }
 }
