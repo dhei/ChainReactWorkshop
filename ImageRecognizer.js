@@ -1,10 +1,10 @@
-import { TfImageRegonition } from 'react-native-tensorflow';
+import { TfImageRecognition } from 'react-native-tensorflow';
 
 export default class ImageRecognizer
 {
   constructor(options)
   {
-    this.recognizer = new TfImageRegonition(options);
+    this.recognizer = new TfImageRecognition(options);
   }
 
   async recognize(data)
