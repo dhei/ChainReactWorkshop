@@ -44,11 +44,14 @@ export default class CameraApp extends Component {
     try
     {
       const data = await this.camera.capture({metadata: options});
-      const result = await this.recognizer.recognize({
+      const results = await this.recognizer.recognize({
         image: data.path,
+        inputName: 'Placeholder',
+        outputName: 'loss',
       });
-      
-      alert(JSON.stringify(result));
+      if (results.length > 0) {
+        alert(`Name: ${results[0].name} - Confidence: ${results[0].confidence}`);
+      }
     }
     catch (err)
     {
