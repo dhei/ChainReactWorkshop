@@ -8,19 +8,35 @@ import {
 } from 'react-native';
 
 import Camera from 'react-native-camera';
-
+import RNFS from 'react-native-fs';
 import ImageRecognizer from './ImageRecognizer';
 
 export default class CameraApp extends Component {
 
   componentDidMount() {
-    this.recognizer = new ImageRecognizer({
-      model: Platform.select({
-        windows: require('./assets/model.onnx'),
-        default: require('./assets/model.pb'),
-      }),
-      labels: require('./assets/labels.txt'),
+    // this.recognizer = new ImageRecognizer({
+    //   model: Platform.select({
+    //     windows: require('./assets/model.onnx'),
+    //     android: require('./assets/model.pb'),
+    //     ios: require('./assets/Model.mlmodel')
+    //   }),
+    //   labels: Platform.select({
+    //     ios: undefined,
+    //     default: require('./assets/labels.txt')
+    //   })
+    // });
+    const options = Platform.select({
+      android: {
+        model: require('./assets/model.pb'),
+        labels: require('./assets/labels.txt')
+      },
+      ios: RNFS.MainBundlePath + '/assets/21bec62da90e4a00a534e26b9fbc2800.mlmodel',
+      windows: {
+        model: require('./assets/model.onnx'),
+        labels: require('./assets/labels.txt')
+      }
     });
+    this.recognizer = new ImageRecognizer(options);
   }
 
   render() {
@@ -44,13 +60,18 @@ export default class CameraApp extends Component {
     try
     {
       const data = await this.camera.capture({metadata: options});
-      const results = await this.recognizer.recognize({
-        image: data.path,
-        inputName: 'Placeholder',
-        outputName: 'loss',
+      const path = Platform.select({
+        android: {
+          image: data.path,
+          inputName: 'Placeholder',
+          outputName: 'loss',
+        },
+        ios: data.path,
       });
+      const results = await this.recognizer.recognize(path);
       if (results.length > 0) {
-        alert(`Name: ${results[0].name} - Confidence: ${results[0].confidence}`);
+        // alert(`Name: ${results[0].name} - Confidence: ${results[0].confidence}`);
+        alert(JSON.stringify(results));
       }
     }
     catch (err)

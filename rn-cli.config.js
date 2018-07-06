@@ -1,5 +1,5 @@
 module.exports = {
     getAssetExts() {
-      return ['pb', 'txt', 'onnx']
+      return ['pb', 'txt', 'onnx', 'mlmodel']
     }
   }

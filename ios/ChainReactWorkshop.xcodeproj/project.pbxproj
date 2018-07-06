@@ -38,7 +38,13 @@
 		42895690352743DC94033DC5 /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D28A9ECB734EB196AC2AB5 /* libRNCamera.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		9C9D870820EFDCED00CDC7F3 /* libRNFS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9D870520EFDC2B00CDC7F3 /* libRNFS.a */; };
+		9CF73E3820EFCF8B00B10A17 /* RNPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B36003087146DAB17720BD /* RNPlaceholder.swift */; };
+		9CF73E3920EFCF8B00B10A17 /* RNPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B36003087146DAB17720BD /* RNPlaceholder.swift */; };
+		9CF73E3A20EFCF8B00B10A17 /* RNPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B36003087146DAB17720BD /* RNPlaceholder.swift */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		C68C68FC5E7C4E2AB7EB0D77 /* RNPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B36003087146DAB17720BD /* RNPlaceholder.swift */; };
+		F19C67C36FC44A5FBB7697CF /* libreact-native-coreml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0A2A97BA1B4462988716A0 /* libreact-native-coreml.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -315,6 +321,27 @@
 			remoteGlobalIDString = 4107012F1ACB723B00C6AA39;
 			remoteInfo = RNCamera;
 		};
+		9C9D870420EFDC2B00CDC7F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C9D86FF20EFDC2B00CDC7F3 /* RNFS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F12AFB9B1ADAF8F800E0535D;
+			remoteInfo = RNFS;
+		};
+		9C9D870620EFDC2B00CDC7F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C9D86FF20EFDC2B00CDC7F3 /* RNFS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6456441F1EB8DA9100672408;
+			remoteInfo = "RNFS-tvOS";
+		};
+		9CF73E2820EFCCDB00B10A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D84CC51503B044409EE9D3AE /* react-native-coreml.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 719BBC361F8957740028B47D;
+			remoteInfo = "react-native-coreml";
+		};
 		ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
@@ -347,13 +374,17 @@
 		2D02E47B1E0B4A5D006451C7 /* ChainReactWorkshop-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChainReactWorkshop-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ChainReactWorkshop-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChainReactWorkshop-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0A2A97BA1B4462988716A0 /* libreact-native-coreml.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libreact-native-coreml.a"; sourceTree = "<group>"; };
+		51B36003087146DAB17720BD /* RNPlaceholder.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; path = RNPlaceholder.swift; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8C330A450E6640B79DB49AF6 /* libRNTensorflow.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNTensorflow.a; sourceTree = "<group>"; };
+		9C9D86FF20EFDC2B00CDC7F3 /* RNFS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFS.xcodeproj; path = "../node_modules/react-native-fs/RNFS.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B967177893D6478FA6EBCE8E /* RNCamera.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RNCamera.xcodeproj"; sourceTree = "<group>"; };
 		D0D28A9ECB734EB196AC2AB5 /* libRNCamera.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNCamera.a; sourceTree = "<group>"; };
+		D84CC51503B044409EE9D3AE /* react-native-coreml.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = "react-native-coreml.xcodeproj"; path = "../node_modules/react-native-coreml/ios/react-native-coreml.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,6 +400,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9D870820EFDCED00CDC7F3 /* libRNFS.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -383,6 +415,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				42895690352743DC94033DC5 /* libRNCamera.a in Frameworks */,
+				F19C67C36FC44A5FBB7697CF /* libreact-native-coreml.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +590,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				9C9D86FF20EFDC2B00CDC7F3 /* RNFS.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -570,6 +604,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				B967177893D6478FA6EBCE8E /* RNCamera.xcodeproj */,
+				D84CC51503B044409EE9D3AE /* react-native-coreml.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -614,6 +649,8 @@
 			children = (
 				D0D28A9ECB734EB196AC2AB5 /* libRNCamera.a */,
 				8C330A450E6640B79DB49AF6 /* libRNTensorflow.a */,
+				4E0A2A97BA1B4462988716A0 /* libreact-native-coreml.a */,
+				51B36003087146DAB17720BD /* RNPlaceholder.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -622,6 +659,23 @@
 			isa = PBXGroup;
 			children = (
 				9C43B71220EBF6F700A8F5BF /* libRNCamera.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C9D870020EFDC2B00CDC7F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C9D870520EFDC2B00CDC7F3 /* libRNFS.a */,
+				9C9D870720EFDC2B00CDC7F3 /* libRNFS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CF73E2520EFCCDB00B10A17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CF73E2920EFCCDB00B10A17 /* libreact-native-coreml.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -797,12 +851,20 @@
 					ProjectRef = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
 				},
 				{
+					ProductGroup = 9CF73E2520EFCCDB00B10A17 /* Products */;
+					ProjectRef = D84CC51503B044409EE9D3AE /* react-native-coreml.xcodeproj */;
+				},
+				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
 					ProductGroup = 9C43B70E20EBF6F700A8F5BF /* Products */;
 					ProjectRef = B967177893D6478FA6EBCE8E /* RNCamera.xcodeproj */;
+				},
+				{
+					ProductGroup = 9C9D870020EFDC2B00CDC7F3 /* Products */;
+					ProjectRef = 9C9D86FF20EFDC2B00CDC7F3 /* RNFS.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1075,6 +1137,27 @@
 			remoteRef = 9C43B71120EBF6F700A8F5BF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		9C9D870520EFDC2B00CDC7F3 /* libRNFS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNFS.a;
+			remoteRef = 9C9D870420EFDC2B00CDC7F3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C9D870720EFDC2B00CDC7F3 /* libRNFS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNFS.a;
+			remoteRef = 9C9D870620EFDC2B00CDC7F3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9CF73E2920EFCCDB00B10A17 /* libreact-native-coreml.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libreact-native-coreml.a";
+			remoteRef = 9CF73E2820EFCCDB00B10A17 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1155,6 +1238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* ChainReactWorkshopTests.m in Sources */,
+				9CF73E3820EFCF8B00B10A17 /* RNPlaceholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1164,6 +1248,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				C68C68FC5E7C4E2AB7EB0D77 /* RNPlaceholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1173,6 +1258,7 @@
 			files = (
 				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
 				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+				9CF73E3920EFCF8B00B10A17 /* RNPlaceholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1181,6 +1267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DCD954D1E0B4F2C00145EB5 /* ChainReactWorkshopTests.m in Sources */,
+				9CF73E3A20EFCF8B00B10A17 /* RNPlaceholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1225,6 +1312,7 @@
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-cameraios/**",
 					"$(SRCROOT)..\node_modules\neact-native-tensorflowios",
+					"$(SRCROOT)/../node_modules/react-native-coreml/ios",
 				);
 				INFOPLIST_FILE = ChainReactWorkshopTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1233,12 +1321,14 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChainReactWorkshop.app/ChainReactWorkshop";
 			};
 			name = Debug;
@@ -1253,6 +1343,7 @@
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-cameraios/**",
 					"$(SRCROOT)..\node_modules\neact-native-tensorflowios",
+					"$(SRCROOT)/../node_modules/react-native-coreml/ios",
 				);
 				INFOPLIST_FILE = ChainReactWorkshopTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1261,12 +1352,14 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChainReactWorkshop.app/ChainReactWorkshop";
 			};
 			name = Release;
@@ -1280,8 +1373,10 @@
 				DEVELOPMENT_TEAM = 5FNLK54962;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)..\node_modules\neact-native-cameraios/**",
-					"$(SRCROOT)..\node_modules\neact-native-tensorflowios",
+					"$(SRCROOT)..",
+					node_modules,
+					"react-native-tensorflowios",
+					"$(SRCROOT)/../node_modules/react-native-coreml/ios",
 				);
 				INFOPLIST_FILE = ChainReactWorkshop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1291,6 +1386,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = ChainReactWorkshop;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1303,8 +1399,10 @@
 				DEVELOPMENT_TEAM = 5FNLK54962;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)..\node_modules\neact-native-cameraios/**",
-					"$(SRCROOT)..\node_modules\neact-native-tensorflowios",
+					"$(SRCROOT)..",
+					node_modules,
+					"react-native-tensorflowios",
+					"$(SRCROOT)/../node_modules/react-native-coreml/ios",
 				);
 				INFOPLIST_FILE = ChainReactWorkshop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1314,6 +1412,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = ChainReactWorkshop;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1335,11 +1434,13 @@
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-cameraios/**",
 					"$(SRCROOT)..\node_modules\neact-native-tensorflowios",
+					"$(SRCROOT)/../node_modules/react-native-coreml/ios",
 				);
 				INFOPLIST_FILE = "ChainReactWorkshop-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1350,6 +1451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ChainReactWorkshop-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -1372,11 +1474,13 @@
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-cameraios/**",
 					"$(SRCROOT)..\node_modules\neact-native-tensorflowios",
+					"$(SRCROOT)/../node_modules/react-native-coreml/ios",
 				);
 				INFOPLIST_FILE = "ChainReactWorkshop-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1387,6 +1491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ChainReactWorkshop-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -1408,11 +1513,13 @@
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-cameraios/**",
 					"$(SRCROOT)..\node_modules\neact-native-tensorflowios",
+					"$(SRCROOT)/../node_modules/react-native-coreml/ios",
 				);
 				INFOPLIST_FILE = "ChainReactWorkshop-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1423,6 +1530,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ChainReactWorkshop-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChainReactWorkshop-tvOS.app/ChainReactWorkshop-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
@@ -1444,11 +1552,13 @@
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-cameraios/**",
 					"$(SRCROOT)..\node_modules\neact-native-tensorflowios",
+					"$(SRCROOT)/../node_modules/react-native-coreml/ios",
 				);
 				INFOPLIST_FILE = "ChainReactWorkshop-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1459,6 +1569,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ChainReactWorkshop-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChainReactWorkshop-tvOS.app/ChainReactWorkshop-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
@@ -1502,6 +1613,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1536,6 +1648,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

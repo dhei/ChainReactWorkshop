@@ -8,6 +8,8 @@ target 'ChainReactWorkshop' do
   # Pods for ChainReactWorkshop
   pod 'TensorFlow-experimental'
   
+  pod 'RNFS', :path => '../node_modules/react-native-fs'
+
   target 'ChainReactWorkshopTests' do
     inherit! :search_paths
     # Pods for testing
